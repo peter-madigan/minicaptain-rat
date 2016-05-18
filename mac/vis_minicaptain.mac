@@ -5,7 +5,7 @@
 /run/initialize
 
 #initialize the visualizer
-/vis/open HepRepFile
+/vis/open HepRepXML
 /vis/scene/create
 /vis/scene/add/volume
 /vis/sceneHandler/attach
@@ -20,8 +20,8 @@
 /rat/procset update 1
 #END EVENT LOOP
 
-/generator/add combo VERTEX:POSITION
-/generator/vtx/set 100 128
+/generator/add combo gun2:point
+/generator/vtx/set e- 0 0 0 0 100.0 100.0
 /generator/pos/set 0 0 0
 
 /run/beamOn 1
