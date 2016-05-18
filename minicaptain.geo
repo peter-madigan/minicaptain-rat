@@ -38,7 +38,7 @@ type: "tube",
 r_max: 725.50,
 size_z: 398.96,
 position: [0.0, 0.0, 0.0],
-material: "doped_water",
+material: "liquid_Ar",
 color: [0.0, 0.0, 1.0, 0.1],
 drawstyle: "solid"
 }
@@ -57,7 +57,7 @@ r_max: 609.6,
 r_min: 599.6,
 size_z: 150.0,
 position: [0.0, 0.0, -206.09],
-material: "polyethylene",
+material: "acrylic_white",
 color: [0.0, 0.5, 0.0, 0.9],
 drawstyle: "solid"
 }

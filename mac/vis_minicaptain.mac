@@ -6,22 +6,27 @@
 
 #initialize the visualizer
 /vis/open HepRepXML
-/vis/scene/create
-/vis/scene/add/volume
-/vis/sceneHandler/attach
-/vis/scene/add/trajectories
+/vis/drawVolume
+/vis/viewer/flush
+/vis/scene/add/trajectories rich
 /vis/scene/add/hits
-/tracking/storeTrajectory 1
 
 # BEGIN EVENT LOOP
-/rat/proc simpledaq
 /rat/proc count
 /rat/proc outroot
 /rat/procset update 1
+
+/rat/proclast outroot
+/rat/procset file "test.root"
 #END EVENT LOOP
 
 /generator/add combo gun2:point
-/generator/vtx/set e- 0 0 0 0 100.0 100.0
+/generator/vtx/set e-  0 0 0 0 10.0 10.0
 /generator/pos/set 0 0 0
+/generator/rate/set 1.0
+
+#/generator/add combo pbomb:point
+#/generator/vtx/set 100 128
+#/generator/pos/set 0 0 0
 
 /run/beamOn 1
