@@ -12,10 +12,10 @@ mirror_surface: "mirror",
 dynode_surface: "stainless_steel",
 
 dynode_radius: 7.0, // mm
-dynode_top:   -7.0, // mm
+dynode_top:    0.0, // mm
 wall_thickness: 3.0, // mm
 
-z_edge: [11.0, 0.0, -11.0],
-rho_edge: [11.0, 11.0, 11.0],
-z_origin: [22.0, -22.0],
+z_edge: [12.7, 0.0, -12.7],
+rho_edge: [12.7, 12.7, 12.7],
+z_origin: [12.7, -12.7],
 }
