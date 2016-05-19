@@ -147,20 +147,20 @@ color: [0.0, 0.5, 0.0, 0.5],
 drawstyle: "solid"
 }
 
-//{ 
-//name: "GEO", 
-//index: "pmts", 
-//valid_begin: [0, 0], 
-//valid_end: [0, 0], 
-//mother: "LAr", 
-//type: "pmtarray",
-//pmt_model: "r8520",
-//pmt_detector_type: "idpmt",
-//sensitive_detector: "/mydet/pmt/inner", 
-//efficiency_correction: 1.000,  
-//pos_table: "PMTINFO",
-//orientation: "manual",
-//} 
+{ 
+name: "GEO", 
+index: "pmts", 
+valid_begin: [0, 0], 
+valid_end: [0, 0], 
+mother: "LAr", 
+type: "pmtarray",
+pmt_model: "r8520",
+pmt_detector_type: "idpmt",
+sensitive_detector: "/mydet/pmt/inner", 
+efficiency_correction: 1.000,  
+pos_table: "PMTINFO",
+orientation: "manual",
+} 
 
 
 
