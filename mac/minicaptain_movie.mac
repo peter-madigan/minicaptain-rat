@@ -20,10 +20,10 @@
 
 # remove the # from the following to lines to export the detector geometry to a .png file
 /vis/ogl/set/exportFormat png
-#/vis/ogl/export
+/vis/ogl/export
 
-/control/loop data/minicaptain/mac/movieStep001.loop theta -90 0 5
-/control/loop data/minicaptain/mac/movieStep003.loop theta 0 -90 -5
+/control/loop movieStep001.loop theta -90 0 5
+/control/loop movieStep003.loop theta 0 -90 -5
 
 /generator/add combo gun:point
 /generator/vtx/set e-  0 0 1 7 # pname dir_x dir_y dir_z energy

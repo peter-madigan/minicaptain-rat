@@ -1,3 +1,6 @@
+/glg4debug/glg4param omit_muon_processes  1.0
+/glg4debug/glg4param omit_hadronic_processes  1.0
+
 #set the detector parameters
 /rat/db/set DETECTOR experiment "minicaptain"
 /rat/db/set DETECTOR geo_file "minicaptain/minicaptain.geo"
@@ -5,11 +8,17 @@
 /run/initialize
 
 #initialize the visualizer
-/vis/open HepRepXML
+#/vis/open HepRepXML
+/vis/open OGLIQt
+/vis/ogl/set/exportFormat png
 /vis/drawVolume
 /vis/viewer/flush
-/vis/scene/add/trajectories rich
+/vis/scene/add/trajectories
 /vis/scene/add/hits
+/vis/scene/endOfEventAction accumulate
+
+/vis/viewer/set/viewpointThetaPhi 80 270
+/vis/viewer/flush
 
 # BEGIN EVENT LOOP
 /rat/proc count
@@ -20,13 +29,13 @@
 /rat/procset file "test.root"
 #END EVENT LOOP
 
-/generator/add combo gun2:point
-/generator/vtx/set e-  0 0 0 0 10.0 10.0
-/generator/pos/set 0 0 0
-/generator/rate/set 1.0
-
-#/generator/add combo pbomb:point
-#/generator/vtx/set 100 128
+#/generator/add combo gun2:fill
+#/generator/vtx/set e-  0 0 0 0 10.0 10.0
 #/generator/pos/set 0 0 0
+
+/generator/add combo pbomb:point
+/generator/vtx/set 100 128
+/generator/pos/set 0 0 0
+/generator/rate/set 0.001
 
 /run/beamOn 1
