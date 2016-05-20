@@ -8,16 +8,16 @@
 /run/initialize
 
 #initialize the visualizer
-#/vis/open HepRepXML
-/vis/open OGLIQt
-/vis/ogl/set/exportFormat png
+/vis/open HepRepXML
+#/vis/open OGLIQt
+#/vis/ogl/set/exportFormat png
 /vis/drawVolume
 /vis/viewer/flush
 /vis/scene/add/trajectories
 /vis/scene/add/hits
 /vis/scene/endOfEventAction accumulate
 
-/vis/viewer/set/viewpointThetaPhi 80 270
+#/vis/viewer/set/viewpointThetaPhi 80 270
 /vis/viewer/flush
 
 # BEGIN EVENT LOOP
