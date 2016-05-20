@@ -9,14 +9,14 @@
 # BEGIN EVENT LOOP
 /rat/proc simpledaq
 /rat/proc count
-/rat/procset update 10
+/rat/procset update 1
 
 # Use IO.default_output_filename
 /rat/proclast outroot
 #END EVENT LOOP
 
 /generator/add combo gun2:fill
-/generator/vtx/set e-  0 0 0 0 10.0 10.0
+/generator/vtx/set neutron  0 0 0 0 500.0 500.0
 /generator/pos/set 0 0 0
 
-/run/beamOn 1000
+/run/beamOn 100
