@@ -6,8 +6,9 @@ if [ "$1" == "push" ]; then
     git add *.ratdb
     git add *.geo
     git add *.md
-    git add mac/*.mac
-    git add mac/*.loop
+    git add */*.mac
+    git add */*.loop
+    git add */*.sh
     
     DATE=`date +"%Y-%m-%d"`
     git commit -m "${DATE}"
