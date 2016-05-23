@@ -1,4 +1,7 @@
-#!/bin/bash
+#!/bin/bash -l
+
+module avail
+
 cd /global/homes/p/pmadigan/work/sim
 source setup.sh
 source rat-pac/env.sh
