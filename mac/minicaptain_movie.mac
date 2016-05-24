@@ -2,6 +2,7 @@
 /rat/db/set DETECTOR experiment "minicaptain"
 /rat/db/set DETECTOR geo_file "minicaptain/minicaptain.geo"
 
+/control/verbose 2
 /run/initialize
 
 #initialize the visualizer

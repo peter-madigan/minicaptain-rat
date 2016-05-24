@@ -1,0 +1,48 @@
+{
+name: "MATERIAL",
+index: "fiberglass", // PDG SiO2
+valid_begin: [0,0],
+valid_end: [0,0],
+density: 2.20,
+nelements: 2,
+nmaterials: 0,
+elements: ["Silicon", "Oxygen"],
+elemprop: [0.333, 0.667],
+}
+
+{
+name: "ELEMENT", // need to call it an element because the RAT constructor can't handle a declaration using z/a
+index: "Epoxy", // 301-1 epoxy resin
+valid_begin: [0,0],
+valid_end: [0,0],
+
+SYMBOL: "Epoxy",
+z: 6, // actually 5.9883, again because of the RAT constructor
+a: 11.8991
+}
+
+{
+name: "MATERIAL",
+index: "epoxy",
+valid_begin: [0,0],
+valid_end: [0,0],
+density: 1.19,
+nelements: 1,
+nmaterials: 0,
+elements: ["Epoxy"],
+elemprop: [1.0]
+}
+
+{
+name: "MATERIAL",
+index: "FR4",  //cryogenic G10FR4
+valid_begin : [0, 0],
+valid_end : [0, 0],
+density: 1.82,
+nelements: 0,
+nmaterials: 2,
+materials: ["fiberglass", "epoxy"],
+matprop: [0.600, 0.400],
+state: "solid"
+}
+
