@@ -15,8 +15,8 @@
 /rat/proclast outroot
 #END EVENT LOOP
 
-/generator/add combo pbomb:point
-/generator/vtx/set 1000 128
-/generator/pos/set 0 0 -123.11
+/generator/add combo gun2:point
+/generator/vtx/set neutron 0 -1 0 3 1 800
+/generator/pos/set 0 610 -123.11
 
 /run/beamOn 100
