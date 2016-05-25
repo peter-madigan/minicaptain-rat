@@ -188,10 +188,10 @@ mother: "TPC_bottom",
 type: "tubearray",
 pos_table: "WINDOWINFO",
 
-size_z: 0.8,
+size_z: 0.75,
 r_max: 19.05,
 
-material: "tpb_coated_glass",
+material: "glass",
 color: [1.0, 1.0, 1.0, 0.1],
 drawstyle: "solid"
 
@@ -203,7 +203,7 @@ name: "GEO",
 index: "TPB_coating",
 valid_begin: [0, 0],
 valid_end: [0, 0],
-mother: "windows",
+mother: "LAr",
 type: "tubearray",
 pos_table: "TPBINFO",
 
