@@ -191,11 +191,28 @@ pos_table: "WINDOWINFO",
 size_z: 0.8,
 r_max: 19.05,
 
-material: "glass",
+material: "tpb_coated_glass",
 color: [1.0, 1.0, 1.0, 0.1],
 drawstyle: "solid"
 
 orientation: "manual",
 }
 
+{
+name: "GEO",
+index: "TPB_coating",
+valid_begin: [0, 0],
+valid_end: [0, 0],
+mother: "windows",
+type: "tubearray",
+pos_table: "TPBINFO",
 
+size_z: 0.05,
+r_max: 19.05,
+
+material: "TPB",
+color: [0.0, 1.0, 0.0, 0.5],
+drawstyle: "solid"
+
+orientation: "manual",
+}
