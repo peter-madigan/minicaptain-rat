@@ -203,7 +203,7 @@ name: "GEO",
 index: "TPB_coating",
 valid_begin: [0, 0],
 valid_end: [0, 0],
-mother: "LAr",
+mother: "TPC_bottom",
 type: "tubearray",
 pos_table: "TPBINFO",
 

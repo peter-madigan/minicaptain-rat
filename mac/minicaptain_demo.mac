@@ -1,6 +1,8 @@
 /glg4debug/glg4param omit_muon_processes  1.0
 /glg4debug/glg4param omit_hadronic_processes  1.0
 
+/PhysicsList/setOpWLS g4
+
 /rat/db/set DETECTOR experiment "cylinder"
 /rat/db/set DETECTOR geo_file "cylinder/cylinder.geo"
 
@@ -16,7 +18,7 @@
 #END EVENT LOOP
 
 /generator/add combo gun2:point
-/generator/vtx/set neutron 0 -1 0 3 1 800
-/generator/pos/set 0 610 -123.11
+/generator/vtx/set neutron -1 0 0 3 1 800
+/generator/pos/set 610 0 -123.11
 
 /run/beamOn 100
