@@ -1,10 +1,10 @@
-/glg4debug/glg4param omit_muon_processes  1.0
+B1;2c/glg4debug/glg4param omit_muon_processes  1.0
 /glg4debug/glg4param omit_hadronic_processes  1.0
 
 /PhysicsList/setOpWLS g4
 
-/rat/db/set DETECTOR experiment "cylinder"
-/rat/db/set DETECTOR geo_file "cylinder/cylinder.geo"
+/rat/db/set DETECTOR experiment "minicaptain"
+/rat/db/set DETECTOR geo_file "minicaptain/minicaptain.geo"
 
 /run/initialize
 
