@@ -24,17 +24,43 @@ name: "OPTICS",
 index: "TPB",
 valid_begin : [0, 0],
 valid_end : [0, 0],
-WLSABSLENGTH_option: "energy",
-WLSABSLENGTH_value1: [9.5e-6, 9.7e-6, 9.9e-6], // MeV
-WLSABSLENGTH_value2: [1e-6, 1e-6, 1e-6], // mm
+WLSABSLENGTH_option: "wavelength",
+WLSABSLENGTH_value1: [125.0, 128.0, 131.0],
+WLSABSLENGTH_value2: [1e-6, 1e-6, 1e-6], 
 
-WLSCOMPONENT_option: "energy",
-WLSCOMPONENT_value1: [0.30e-6, 0.28e-6, 0.30e-6], // MeV
-WLSCOMPONENT_value2: [0, 1, 0], 
+WLSCOMPONENT_option: "wavelength",
+WLSCOMPONENT_value1: [350.0, 400.0, 440.0, 500.0, 550.0], // arXiv:1304.6117
+WLSCOMPONENT_value2: [  0.0,   0.05,  0.8,   0.15,  0.0], 
 
-WLSTIMECONSTANT: 0.5e-9,
+WLSTIMECONSTANT: 2e-9,
 
 WLSMEANNUMBERPHOTONS: 1.3,
 
 PROPERTY_LIST: ["WLSABSLENGTH","WLSCOMPONENT","WLSTIMECONSTANT","WLSMEANNUMBERPHOTONS"]
+}
+
+{
+name: "OPTICS",
+index: "liquid_Ar",
+valid_begin : [0, 0],
+valid_end : [0, 0],
+RINDEX_option: "wavelength",
+RINDEX_value1: [126.0, 180.0, 400.0], // arXiv:1502.04213
+RINDEX_value2: [  1.45,  1.27,  1.24],
+ 
+FASTCOMPONENT_option: "wavelength",
+FASTCOMPONENT_value1: [128.0],
+FASTCOMPONENT_value2: [  1.0],
+FASTTIMECONSTANT: 7.0,
+
+SLOWCOMPONENT_option: "wavelength",
+SLOWCOMPONENT_value1: [128.0],
+SLOWCOMPONENT_value2: [  1.0],
+SLOWTIMECONSTANT: 1600,
+
+SCINTILLATIONYIELD: 51300.0, // MeV^-1 DOI:10.1143/JJAP.41.1538
+
+YIELDRATIO: 0.8,
+
+PROPERTY_LIST: ["RINDEX","SCINTILLATIONYIELD","FASTCOMPONENT","FASTTIMECONSTANT","SLOWCOMPONENT","SLOWTIMECONSTANT","YIELDRATIO"],
 }
