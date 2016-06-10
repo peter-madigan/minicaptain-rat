@@ -40,6 +40,7 @@ r_max:  673.1,
 size_z: 529.53,
 position: [0.0, 0.0, 0.0],
 material: "liquid_Ar",
+//material: "TPB",
 color: [0.0, 0.0, 1.0, 0.1],
 drawstyle: "solid"
 }
