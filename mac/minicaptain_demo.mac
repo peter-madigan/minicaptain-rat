@@ -11,14 +11,10 @@
 /rat/procset update 1
 
 /glg4scint/on
-/glg4scint/reemission on
+#/glg4scint/reemission on
 
 # Use IO.default_output_filename
 /rat/proclast outroot
-<<<<<<< HEAD
-/rat/procset file "demo_0.root"
-=======
->>>>>>> 7d58eb4e2a4b352693d8e97eb76c0759ecf55278
 #END EVENT LOOP
 
 #/generator/add combo pbomb:point
@@ -26,11 +22,7 @@
 #/generator/pos/set 0 0 -123.11
 
 /generator/add combo gun2:point
-/generator/vtx/set neutron -1 0 0 1 10 800
-/generator/pos/set 610 0 -123.11
+/generator/vtx/set neutron -1 0 0 0 10 800
+/generator/pos/set 600 0 -123.11
 
-<<<<<<< HEAD
-/run/beamOn 1
-=======
 /run/beamOn 1000
->>>>>>> 7d58eb4e2a4b352693d8e97eb76c0759ecf55278
