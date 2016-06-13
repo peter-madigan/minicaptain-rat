@@ -47,14 +47,14 @@ drawstyle: "solid"
 
 {
 name: "GEO",
-index: "TPC_top",
+index: "TPC",
 valid_begin: [0, 0],
 valid_end: [0, 0],
 mother: "LAr",
 type: "polygon",
 poly_table: "TPCINFO",
-size_z: 0.8,
-position: [0.0, 0.0, 47.69],
+size_z: 407.16,
+position: [0.0, 0.0, -123.11],
 material: "FR4",
 color: [0.0, 0.5, 0.0, 0.5],
 drawstyle: "solid"
@@ -62,106 +62,16 @@ drawstyle: "solid"
 
 {
 name: "GEO",
-index: "TPC_1",
+index: "LAr_inner", 
 valid_begin: [0, 0],
 valid_end: [0, 0],
-mother: "LAr",
-type: "box",
-size: [304.8, 160.0, 0.8],
-position: [457.2, 263.965, -113.11],
-rotation: [90.0, -60.0, 0.0],
-material: "FR4",
-color: [0.0, 0.5, 0.0, 0.5],
-drawstyle: "solid"
-}
-
-{
-name: "GEO",
-index: "TPC_2",
-valid_begin: [0, 0],
-valid_end: [0, 0],
-mother: "LAr",
-type: "box",
-size: [304.8, 160.0, 0.8],
-position: [457.2, -263.965, -113.11],
-rotation: [90.0, 60.0, 0.0],
-material: "FR4",
-color: [0.0, 0.5, 0.0, 0.5],
-drawstyle: "solid"
-}
-
-{
-name: "GEO",
-index: "TPC_3",
-valid_begin: [0, 0],
-valid_end: [0, 0],
-mother: "LAr",
-type: "box",
-size: [304.8, 160.0, 0.8],
-position: [0.0, -527.93, -113.11],
-rotation: [90.0, 0.0, 0.0],
-material: "FR4",
-color: [0.0, 0.5, 0.0, 0.5],
-drawstyle: "solid"
-}
-
-{
-name: "GEO",
-index: "TPC_4",
-valid_begin: [0, 0],
-valid_end: [0, 0],
-mother: "LAr",
-type: "box",
-size: [304.8, 160.0, 0.8],
-position: [0.0, 527.93, -113.11],
-rotation: [90.0, 0.0, 0.0],
-material: "FR4",
-color: [0.0, 0.5, 0.0, 0.5],
-drawstyle: "solid"
-}
-
-{
-name: "GEO",
-index: "TPC_5",
-valid_begin: [0, 0],
-valid_end: [0, 0],
-mother: "LAr",
-type: "box",
-size: [304.8, 160.0, 0.8],
-position: [-457.2, -263.965, -113.11],
-rotation: [90.0, -60.0, 0.0],
-material: "FR4",
-color: [0.0, 0.5, 0.0, 0.5],
-drawstyle: "solid"
-}
-
-{
-name: "GEO",
-index: "TPC_6",
-valid_begin: [0, 0],
-valid_end: [0, 0],
-mother: "LAr",
-type: "box",
-size: [304.8, 160.0, 0.8],
-position: [-457.2, 263.965, -113.11],
-rotation: [90.0, 60.0, 0.0],
-material: "FR4",
-color: [0.0, 0.5, 0.0, 0.5],
-drawstyle: "solid"
-}
-
-{
-name: "GEO",
-index: "TPC_bottom", 
-valid_begin: [0, 0],
-valid_end: [0, 0],
-mother: "LAr",
+mother: "TPC",
 type: "polygon",
-poly_table: "TPCINFO",
-size_z: 0.8,
-position: [0.0, 0.0, -273.91],
-material: "FR4",
-color: [0.0, 0.5, 0.0, 0.5],
+poly_table: "INNERINFO",
+size_z: 405.64,
+position: [0.0, 0.0, -123.11],
+material: "liquid_Ar",
+color: [0.0, 0.0, 1.0, 0.1],
 drawstyle: "solid"
 }
 
@@ -185,16 +95,16 @@ name: "GEO",
 index: "windows",
 valid_begin: [0, 0],
 valid_end: [0, 0],
-mother: "TPC_bottom",
+mother: "TPC",
 type: "tubearray",
 pos_table: "WINDOWINFO",
 
-size_z: 0.75,
+size_z: 0.76,
 r_max: 19.05,
 
 material: "glass",
-color: [1.0, 1.0, 1.0, 0.1],
-drawstyle: "solid"
+color: [1.0, 1.0, 0.8, 0.1],
+drawstyle: "solid",
 
 orientation: "manual",
 }
@@ -204,7 +114,7 @@ name: "GEO",
 index: "TPB_coating",
 valid_begin: [0, 0],
 valid_end: [0, 0],
-mother: "TPC_bottom",
+mother: "TPC",
 type: "tubearray",
 pos_table: "TPBINFO",
 
@@ -213,7 +123,7 @@ r_max: 19.05,
 
 material: "TPB",
 color: [0.0, 1.0, 0.0, 0.5],
-drawstyle: "solid"
+drawstyle: "solid",
 
 orientation: "manual",
 }

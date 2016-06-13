@@ -15,7 +15,7 @@
 
 # Use IO.default_output_filename
 /rat/proclast outroot
-/rat/procset file "demo.root"
+/rat/procset file "demo_0.root"
 #END EVENT LOOP
 
 #/generator/add combo pbomb:point
@@ -25,4 +25,4 @@
 /generator/vtx/set neutron -1 0 0 1 10 800
 /generator/pos/set 610 0 -123.11
 
-/run/beamOn 100
+/run/beamOn 1

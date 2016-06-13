@@ -27,7 +27,7 @@
 /control/loop mac/movieStep003.loop theta 0 -90 -5
 
 /generator/add combo gun:point
-/generator/vtx/set neutron  0 0 -1 700 # pname dir_x dir_y dir_z energy
+/generator/vtx/set neutron  -1 0 0 700 # pname dir_x dir_y dir_z energy
 /generator/pos/set 0 0 -123.11       # x y z
 
 /run/beamOn 1
