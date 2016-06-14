@@ -19,7 +19,7 @@ elif [ "$1" == "pull" ]; then
     git fetch origin master
     git pull
 elif [ "$1" == "clean" ]; then
-    rm -fv *~ */*~ *.log */*.log
+    rm -fv *~ */*~ *.log */*.log *.properties */*.properties
 else
     echo "ERROR - Option $1 not recognized!"
 fi
