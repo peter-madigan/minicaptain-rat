@@ -18,6 +18,8 @@ elif [ "$1" == "pull" ]; then
 # Gets current version from github    
     git fetch origin master
     git pull
+elif [ "$1" == "clean" ]; then
+    rm -fv *~ */*~ *.log */*.log
 else
     echo "ERROR - Option $1 not recognized!"
 fi
