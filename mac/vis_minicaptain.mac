@@ -17,7 +17,6 @@
 
 /glg4scint/on
 /glg4scint/reemission on
-/PhysicsList/setOpWLS g4
 
 # BEGIN EVENT LOOP
 #/rat/proc simpledaq
@@ -29,11 +28,11 @@
 #END EVENT LOOP
 
 /generator/add combo gun2:point
-/generator/vtx/set neutron  -1 0 0 1 10.0 10.0
+/generator/vtx/set neutron  -1 0 0 10 800.0 800.0
 /generator/pos/set 610 0 -123.11
 
 #/generator/add combo pbomb:point
 #/generator/vtx/set 100 128
 #/generator/pos/set 0 0 -123.11
 
-/run/beamOn 1
+/run/beamOn 3
