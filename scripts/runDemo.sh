@@ -12,5 +12,5 @@ mkdir -v data/minicaptain_demo
 
 for runno in "$@"; do
     echo "Submitting job for run $runno..."
-    qsub -v runnumber="$runno" -l projectio=1 -j y -o "logs" scripts/runSingle.sh
+    qsub -l h_vmem=15G -v runnumber="$runno" -m as -w e -l projectio=1 -j y -o "logs" scripts/runSingle.sh
 done
