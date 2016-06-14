@@ -9,11 +9,11 @@ finish: "ground",
 polish: 0.05,
 REFLECTIVITY_option: "wavelength",
 REFLECTIVITY_value1: [600.],
-REFLECTIVITY_value2: [0.50],
+REFLECTIVITY_value2: [0.50], // a guess
 RINDEX_option: "wavelength", // copied from glass
 RINDEX_value1: [60.0, 200.0, 300.0, 600.0, 800.0, ],
 RINDEX_value2: [1.458, 1.458, 1.458, 1.458, 1.458, ],
-ABSLENGTH_option: "wavelength", // copied from glass (x0.1, except 600nm x0.5)
+ABSLENGTH_option: "wavelength", // copied from glass (x0.1, except 600nm x0.5, these are just guesses!)
 ABSLENGTH_value1: [60.0,  200.0,   300.0,   330.0, 500.0, 600.0, 770.0,  800.0, ],
 ABSLENGTH_value2: [0.01e-3, 0.01e-3, 0.01e-3, 0.1e3, 0.5e3, 0.5e3, 0.05e3, 0.01e-3, ],
 PROPERTY_LIST: ["REFLECTIVITY", "RINDEX", "ABSLENGTH", ]
@@ -25,8 +25,8 @@ index: "TPB",
 valid_begin : [0, 0],
 valid_end : [0, 0],
 WLSABSLENGTH_option: "wavelength",
-WLSABSLENGTH_value1: [125.0, 128.0, 131.0, 300.0],
-WLSABSLENGTH_value2: [  1e-3,  1e-3,  1e-3,  1e6], 
+WLSABSLENGTH_value1: [125.0, 128.0, 131.0, 200.0, 300.0],
+WLSABSLENGTH_value2: [  1e-3,  1e-3,  1e-3,  1e6, 1e6], // estimates for ~100% eff/tranparency 
 
 WLSCOMPONENT_option: "wavelength",
 WLSCOMPONENT_value1: [350.0, 400.0, 440.0, 500.0, 550.0], // arXiv:1304.6117
@@ -51,8 +51,8 @@ RINDEX_value2: [  1.45,  1.27,  1.24],
 LIGHT_YIELD: 51300.0, // MeV^-1 DOI:10.1143/JJAP.41.1538
 
 SCINTILLATION_option: "dy_dwavelength",
-SCINTILLATION_value1: [127.0, 128.0, 129.0],
-SCINTILLATION_value2: [  0.1,   1.0,   0.1],
+SCINTILLATION_value1: [127.0, 128.0, 129.0], // guess gaussian with sigma = 1nm
+SCINTILLATION_value2: [  0.37,   1.0,   0.37],
  
 SCINTWAVEFORM_value1: [-7.0, -1600.0],
 SCINTWAVEFORM_value2: [ 0.4,     0.6],
