@@ -17,7 +17,7 @@
 #END EVENT LOOP
 
 /generator/add combo pbomb:point
-/generator/vtx/set 100000 128
+/generator/vtx/set 100000 440
 /generator/pos/set 0 0 -123.11
 
 #/generator/add combo gun2:point
