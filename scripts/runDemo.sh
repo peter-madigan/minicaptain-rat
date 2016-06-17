@@ -13,5 +13,5 @@ cp -v data/chain.C data/minicaptain_demo
 
 for runno in "$@"; do
     echo "Submitting job for run $runno..."
-    qsub -l h_vmem=15G -v runnumber="$runno" -m as -w e -l projectio=1 -j y -o "logs" scripts/runSingle.sh
+    qsub -l h_vmem=15G -v macro="minicaptain_demo" -v runnumber="$runno" -m as -w e -l projectio=1 -j y -o "logs" scripts/runSingle.sh
 done
