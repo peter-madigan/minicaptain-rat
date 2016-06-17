@@ -90,7 +90,7 @@ pos_table: "PMTINFO",
 orientation: "manual",
 } 
 
-/*{
+{
 name: "GEO",
 index: "windows",
 valid_begin: [0, 0],
@@ -107,9 +107,9 @@ color: [1.0, 1.0, 0.8, 0.1],
 drawstyle: "solid",
 
 orientation: "manual",
-}*/
+}
 
-/*{
+{
 name: "GEO",
 index: "TPB_coating",
 valid_begin: [0, 0],
@@ -126,4 +126,4 @@ color: [0.0, 1.0, 0.0, 0.5],
 drawstyle: "solid",
 
 orientation: "manual",
-}*/
+}

@@ -17,11 +17,11 @@
 #END EVENT LOOP
 
 /generator/add combo pbomb:point
-/generator/vtx/set 100000 440
+/generator/vtx/set 10000 128
 /generator/pos/set 0 0 -123.11
 
 #/generator/add combo gun2:point
-#/generator/vtx/set neutron -1 0 0 0 10 800
+#/generator/vtx/set neutron -1 0 0 0 0 800
 #/generator/pos/set 650 0 -123.11
 
 /run/beamOn 100

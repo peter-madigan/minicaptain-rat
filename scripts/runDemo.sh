@@ -9,6 +9,7 @@ scons
 cd ../minicaptain-rat
 
 mkdir -v data/minicaptain_demo
+cp -v data/chain.C data/minicaptain_demo
 
 for runno in "$@"; do
     echo "Submitting job for run $runno..."

@@ -38,14 +38,20 @@ ABSLENGTH_option: "wavelength",
 ABSLENGTH_value1: [60.0, 200.0, 300.0,],
 ABSLENGTH_value2: [1e-3, 1e-3,    1e3,], // // estimates for ~100% eff/transparency
 
+LIGHT_YIELD: 51300.0,
+
+SCINTILLATION_option: "dy_dwavelength",
+SCINTILLATION_value1: [350.0, 400.0, 440.0, 500.0, 550.0], // arXiv:1304.6117
+SCINTILLATION_value2: [  0.0,   0.05,  0.8,   0.15,  0.0],
+
 REEMISSION_PROB_option: "wavelength",
-REEMISSION_PROB_value1: [350.0, 400.0, 440.0, 500.0, 550.0], // arXiv:1304.6117
-REEMISSION_PROB_value2: [  0.0, 0.065,  1.04, 0.195,   0.0], // 1.3 x Prob
+REEMISSION_PROB_value1: [60.0, 100.0, 200.0, 300.0, 550.0], 
+REEMISSION_PROB_value2: [ 0.0,   1.3,  	1.3,   0.0,   0.0], 
 
 SCINTWAVEFORM_value1: [-2.0],
 SCINTWAVEFORM_value2: [ 1.0],
 
-PROPERTY_LIST: ["RINDEX","ABSLENGTH","REEMISSION_PROB","SCINTWAVEFORM"]
+PROPERTY_LIST: ["RINDEX","ABSLENGTH","LIGHTYIELD","SCINTILLATION","REEMISSION_PROB","SCINTWAVEFORM"]
 }
 
 {
@@ -57,14 +63,10 @@ RINDEX_option: "wavelength",
 RINDEX_value1: [126.0, 180.0, 400.0], // arXiv:1502.04213
 RINDEX_value2: [  1.45,  1.27,  1.24],
 
-ABSLENGTH_option: "wavelength", // from Rayleigh scattering
-ABSLENGTH_value1: [60.0, 128.0],
-ABSLENGTH_value2: [0.1e-3, 600.0],
-
 LIGHT_YIELD: 51300.0, // MeV^-1 DOI:10.1143/JJAP.41.1538
 
 SCINTILLATION_option: "dy_dwavelength",
-SCINTILLATION_value1: [127.0, 128.0, 129.0], // guess gaussian with sigma = 1nm
+SCINTILLATION_value1: [127.0, 128.0, 129.0], // guess - gaussian with sigma = 1nm
 SCINTILLATION_value2: [  0.37,   1.0,   0.37],
  
 SCINTWAVEFORM_value1: [-7.0, -1600.0],
@@ -72,5 +74,5 @@ SCINTWAVEFORM_value2: [ 0.4,     0.6],
 
 ELECTRICFIELD: 50000.0, // V/m
 
-PROPERTY_LIST: ["RINDEX","ABSLENGTH","LIGHT_YIELD","SCINTILLATION","SCINTWAVEFORM","ELECTRICFIELD"],
+PROPERTY_LIST: ["RINDEX","LIGHT_YIELD","SCINTILLATION","SCINTWAVEFORM","ELECTRICFIELD"],
 }
