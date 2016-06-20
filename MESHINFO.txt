@@ -1,6 +1,6 @@
 {
 name: "GEO",
-index: ground_mesh_0",
+index: "ground_mesh_0",
 valid_begin: [0, 0],
 valid_end: [0, 0],
 mother: "LAr_inner",
@@ -27,7 +27,7 @@ dir_z: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0
 
 {
 name: "GEO",
-index: ground_mesh_1",
+index: "ground_mesh_1",
 valid_begin: [0, 0],
 valid_end: [0, 0],
 mother: "LAr_inner",
@@ -54,7 +54,7 @@ dir_z: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0
 
 {
 name: "GEO",
-index: ground_mesh_2",
+index: "ground_mesh_2",
 valid_begin: [0, 0],
 valid_end: [0, 0],
 mother: "LAr_inner",
@@ -81,7 +81,7 @@ dir_z: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0
 
 {
 name: "GEO",
-index: ground_mesh_3",
+index: "ground_mesh_3",
 valid_begin: [0, 0],
 valid_end: [0, 0],
 mother: "LAr_inner",
@@ -108,7 +108,7 @@ dir_z: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0
 
 {
 name: "GEO",
-index: ground_mesh_4",
+index: "ground_mesh_4",
 valid_begin: [0, 0],
 valid_end: [0, 0],
 mother: "LAr_inner",
@@ -135,7 +135,7 @@ dir_z: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0
 
 {
 name: "GEO",
-index: ground_mesh_5",
+index: "ground_mesh_5",
 valid_begin: [0, 0],
 valid_end: [0, 0],
 mother: "LAr_inner",
@@ -162,7 +162,7 @@ dir_z: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0
 
 {
 name: "GEO",
-index: ground_mesh_6",
+index: "ground_mesh_6",
 valid_begin: [0, 0],
 valid_end: [0, 0],
 mother: "LAr_inner",
@@ -189,7 +189,7 @@ dir_z: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0
 
 {
 name: "GEO",
-index: ground_mesh_7",
+index: "ground_mesh_7",
 valid_begin: [0, 0],
 valid_end: [0, 0],
 mother: "LAr_inner",
@@ -216,7 +216,7 @@ dir_z: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0
 
 {
 name: "GEO",
-index: ground_mesh_8",
+index: "ground_mesh_8",
 valid_begin: [0, 0],
 valid_end: [0, 0],
 mother: "LAr_inner",
@@ -243,7 +243,7 @@ dir_z: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0
 
 {
 name: "GEO",
-index: ground_mesh_9",
+index: "ground_mesh_9",
 valid_begin: [0, 0],
 valid_end: [0, 0],
 mother: "LAr_inner",
@@ -270,7 +270,7 @@ dir_z: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0
 
 {
 name: "GEO",
-index: ground_mesh_10",
+index: "ground_mesh_10",
 valid_begin: [0, 0],
 valid_end: [0, 0],
 mother: "LAr_inner",
@@ -297,7 +297,7 @@ dir_z: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0
 
 {
 name: "GEO",
-index: ground_mesh_11",
+index: "ground_mesh_11",
 valid_begin: [0, 0],
 valid_end: [0, 0],
 mother: "LAr_inner",
@@ -324,7 +324,7 @@ dir_z: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0
 
 {
 name: "GEO",
-index: ground_mesh_12",
+index: "ground_mesh_12",
 valid_begin: [0, 0],
 valid_end: [0, 0],
 mother: "LAr_inner",
@@ -351,7 +351,7 @@ dir_z: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0
 
 {
 name: "GEO",
-index: ground_mesh_13",
+index: "ground_mesh_13",
 valid_begin: [0, 0],
 valid_end: [0, 0],
 mother: "LAr_inner",
@@ -378,7 +378,7 @@ dir_z: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0
 
 {
 name: "GEO",
-index: ground_mesh_14",
+index: "ground_mesh_14",
 valid_begin: [0, 0],
 valid_end: [0, 0],
 mother: "LAr_inner",
@@ -405,7 +405,7 @@ dir_z: [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0
 
 {
 name: "GEO",
-index: ground_mesh_15",
+index: "ground_mesh_15",
 valid_begin: [0, 0],
 valid_end: [0, 0],
 mother: "LAr_inner",
