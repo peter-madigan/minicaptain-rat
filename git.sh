@@ -2,10 +2,12 @@
 echo "Performing $1..."
 if [ "$1" == "push" ]; then
 # Pushes current version to github
+    git add *.txt
     git add *.sh
     git add *.ratdb
     git add *.geo
     git add *.md
+    git add */*.txt
     git add */*.mac
     git add */*.loop
     git add */*.sh
