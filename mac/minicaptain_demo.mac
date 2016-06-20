@@ -16,7 +16,7 @@
 /rat/proclast outroot
 #END EVENT LOOP
 
-/generator/add pbomb point
+/generator/add combo pbomb:point
 /generator/vtx/set 10000 128
 /generator/pos/set 0 0 -123.11
 

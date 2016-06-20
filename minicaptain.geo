@@ -55,7 +55,7 @@ type: "polygon",
 poly_table: "TPCINFO",
 size_z: 160.76,
 position: [0.0, 0.0, -123.11],
-material: "FR4",
+material: "FR4_copper",
 color: [0.0, 0.5, 0.0, 0.5],
 drawstyle: "solid"
 }

@@ -12,14 +12,53 @@ elemprop: [0.5, 0.5]
 
 {
 name: "MATERIAL",
-index: "FR4",  //cryogenic G10FR4
+index: "G10",
+valid_begin: [0,0],
+valid_end: [0,0],
+density: 1.70,
+nelements: 6,
+nmaterials: 0,
+elements: ["Hydrogen","Carbon","Oxygen","Silicon","Boron","Sodium"],
+elemprop: [0.062, 0.368, 0.307, 0.219, 0.022, 0.022],
+state: "solid"
+}
+
+{
+name: "MATERIAL",
+index: "FR4",  
 valid_begin : [0, 0],
 valid_end : [0, 0],
-density: 1.82,
+density: 1.85,
+nelements: 6,
+nmaterials: 0,
+elements: ["Hydrogen","Carbon","Oxygen","Silicon","Boron","Sodium"],
+elemprop: [0.062, 0.368, 0.307, 0.219, 0.022, 0.022],
+state: "solid"
+}
+
+{
+name: "MATERIAL",
+index: "FR4_copper",  
+valid_begin : [0, 0],
+valid_end : [0, 0],
+density: 1.85,
 nelements: 0,
 nmaterials: 2,
-materials: ["glass", "epoxy"],
-matprop: [0.600, 0.400],
+materials: ["FR4", "copper"],
+matprop: [0.97, 0.03],
+state: "solid"
+}
+
+{
+name: "MATERIAL",
+index: "acrylic",
+valid_begin : [0, 0],
+valid_end : [0, 0],
+density: 1.189,
+nelements: 3,
+nmaterials: 0,
+elements: ["Hydrogen", "Oxygen", "Carbon"],
+elemprop: [0.534, 0.133, 0.333],
 state: "solid"
 }
 
