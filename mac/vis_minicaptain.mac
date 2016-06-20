@@ -11,6 +11,7 @@
 /vis/sceneHandler/attach
 /vis/scene/add/trajectories
 /vis/scene/add/hits
+/vis/viewer/flush
 /tracking/discardParticleTrajectory opticalphoton
 /tracking/storeTrajectory 1
 /tracking/FillPointCont true
@@ -35,4 +36,4 @@
 #/generator/vtx/set 100 128
 #/generator/pos/set 0 0 -123.11
 
-/run/beamOn 3
+/run/beamOn 1
